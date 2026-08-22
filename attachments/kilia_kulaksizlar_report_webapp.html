@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulaksızlar & Kilia Type Idols | Chalcolithic Marble Workshop Report</title>
+    <style>
+        :root {
+            --bg: #0f1419;
+            --card: #1a2332;
+            --accent: #c9a227;
+            --text: #e8e6e3;
+            --muted: #a0a8b0;
+            --highlight: #3d5a80;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+            border-bottom: 3px solid var(--accent);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--muted);
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: var(--card);
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #2a3544;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav a:hover { background: var(--highlight); }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        section {
+            margin-bottom: 3.5rem;
+            background: var(--card);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid #2a3544;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: #d4b84a;
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.25rem;
+        }
+        p, li { margin-bottom: 0.9rem; color: var(--text); }
+        ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .gallery figure {
+            background: #121820;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #2a3544;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        .gallery figcaption {
+            padding: 0.8rem 1rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+            background: #151c26;
+        }
+        .highlight-box {
+            background: #15202b;
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .ml-box {
+            background: linear-gradient(135deg, #1a2a3a, #15202b);
+            border: 1px solid #3d5a80;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        .ml-box h3 { color: #7eb8da; margin-top: 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid #2a3544;
+            padding: 0.7rem 1rem;
+            text-align: left;
+        }
+        th { background: #121820; color: var(--accent); }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        @media (max-width: 700px) {
+            .two-col { grid-template-columns: 1fr; }
+            header h1 { font-size: 1.6rem; }
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #2a3544;
+        }
+        .tag {
+            display: inline-block;
+            background: #2a3a4a;
+            color: #c9d4e0;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kulaksızlar Chalcolithic Marble Workshop</h1>
+        <p>Specialized Production of Kilia-Type Figurines &amp; Conical Rhyta in Middle Chalcolithic Western Anatolia (c. 4500–4250 BC)</p>
+        <p style="margin-top:0.8rem;font-size:0.95rem;">Synthesized report from excavation reports, museum collections, and scholarly analyses (Akdeniz 2010; Takaoğlu 2005, 2017, 2021, 2022; Pektaş 2021)</p>
+    </header>
+
+    <nav>
+        <a href="#site">The Site</a>
+        <a href="#manufacturing">Manufacturing</a>
+        <a href="#idols">Kilia Idols</a>
+        <a href="#humanistic">Humanistic Insights</a>
+        <a href="#ml">ML Relevance</a>
+        <a href="#gallery">Image Series</a>
+        <a href="#finds">Key Finds</a>
+    </nav>
+
+    <main>
+        <section id="site">
+            <h2>1. The Site: Kulaksızlar</h2>
+            <p>Kulaksızlar is a single-period Middle Chalcolithic settlement and specialized marble workshop located near the modern village of the same name in the Akhisar district of Manisa province, western Anatolia (central-western Turkey). Situated on a gently sloping hillside at approximately 150 m above sea level on the eastern edge of the Akhisar Plain, the site rests on limestone bedrock. Cultural deposits are thin (20–40 cm), a factor that has both preserved workshop floors and made the site vulnerable to modern agricultural deep ploughing and looting.</p>
+            
+            <div class="highlight-box">
+                <strong>Chronology:</strong> Radiocarbon dating of samples from workshop contexts firmly places occupation between <strong>4500–4250 BC</strong> (Middle Chalcolithic). Earlier surface surveys had suggested a later date; excavation corrected this significantly.
+            </div>
+
+            <p>The site was first identified through surface surveys in the mid-1990s by Rafet Dinç. Systematic survey and analysis by Turan Takaoğlu established it as a rare example of a prehistoric specialized craft production center focused on marble. Rescue excavations in 2018 and 2019 (directed under the Manisa Museum and Ministry of Culture) provided the first stratified contextual data, revealing clustered workshop installations (İşlik A, C, D and others).</p>
+
+            <h3>Notable Architectural Features</h3>
+            <ul>
+                <li><strong>U-shaped and oval workshops</strong> built with single-course stone foundations; superstructures of perishable materials (wattle-and-daub evidence recovered).</li>
+                <li>Internal stone platforms and low benches used as work surfaces.</li>
+                <li>Spatial clustering of production areas with intervening empty zones (suggesting organized activity zones rather than dense domestic settlement).</li>
+                <li>Evidence of year-round occupation (pottery assemblages including cooking and storage vessels, animal bones dominated by cattle ~72%, loom weights, ground stone tools).</li>
+            </ul>
+
+            <p>Related finds at nearby Dağdere (approx. 30 km distant) and residual Kilia heads at later sites such as Beçin Castle (Medieval layers) and Aphrodisias demonstrate both intra-regional exchange and long-term curation or residual deposition of these valued objects.</p>
+        </section>
+
+        <section id="manufacturing">
+            <h2>2. Inferred Manufacturing Practices &amp; Craft Specialization</h2>
+            <p>Kulaksızlar represents one of the clearest archaeological cases of pre-urban craft specialization in the Aegean–Anatolian world. Production focused on two main product classes:</p>
+            <ol>
+                <li><strong>Kilia-type schematic marble figurines</strong></li>
+                <li><strong>Conical marble rhyta</strong> (pointed vessels with paired suspension lugs)</li>
+            </ol>
+
+            <h3>Operational Sequence (chaîne opératoire)</h3>
+            <ul>
+                <li>Procurement of fine-grained local or regional marble.</li>
+                <li>Roughing-out of preforms (blocky to roughly anthropomorphic or conical blanks).</li>
+                <li>Shaping by pecking, abrasion, and grinding using stone hammers, pecking tools, and sandstone abrasives.</li>
+                <li>For rhyta: interior hollowing with rotary motion using bow-drills fitted with sandstone or similar bits of graduated diameters (numerous drill bits recovered).</li>
+                <li>Fine detailing of facial features (raised eyes, nose, ears) and anatomical markers (pubic triangle, arm folds) by incision and low relief.</li>
+                <li>Final polishing to achieve smooth, luminous surfaces.</li>
+            </ul>
+
+            <p>Workshop waste is highly diagnostic: discarded necks (a common breakage point), unfinished heads, body preforms, and conical vessel fragments with rotary striations. Tools include sandstone drill bits, hammerstones, and abrasive slabs. Obsidian from Melos (Greece) and central Anatolia appears on work platforms, indicating long-distance raw material networks even for toolkits.</p>
+
+            <div class="highlight-box">
+                <strong>Specialization criteria met (after Costin 1991):</strong> division of production space, high volume, strong standardization of form and proportions, and high technical investment. This is rare for the period and supports the interpretation of full- or near-full-time specialists rather than purely seasonal or household production.
+            </div>
+
+            <p>Finished products left the site; almost no complete examples were recovered in the workshops themselves. This implies deliberate removal for exchange, ritual deposition elsewhere, or both.</p>
+        </section>
+
+        <section id="idols">
+            <h2>3. The Kilia-Type Figurine (“Stargazer”)</h2>
+            <p>Named after the type-site near Kilia (Gallipoli peninsula) where the first known example was found in the 19th century, these figurines are highly standardized schematic female (or ambiguously gendered) forms characterized by:</p>
+            <ul>
+                <li>Flat, broad torso with arms folded across the chest (often interpreted as holding the breasts).</li>
+                <li>Long cylindrical neck rising from broad shoulders.</li>
+                <li>Oversized head tilted markedly backward so that the face appears to gaze upward (“stargazer” / “star-gazer” nickname used in some museum contexts).</li>
+                <li>Low-relief facial features: almond eyes, triangular nose, small ears.</li>
+                <li>Incised pubic triangle and leg division on the lower body.</li>
+                <li>Overall proportions that emphasize the head and create a sense of upward orientation.</li>
+            </ul>
+            <p>Sizes range from a few centimeters to larger examples (museum pieces often 15–25 cm). The form is so consistent that unprovenanced examples in Western collections can now be confidently attributed to western Anatolian workshops, with Kulaksızlar as the primary known production center.</p>
+        </section>
+
+        <section id="humanistic">
+            <h2>4. Humanistic &amp; Cultural Insights</h2>
+            <p>Beyond technical production, these objects open windows onto Chalcolithic social and symbolic worlds:</p>
+            <ul>
+                <li><strong>Symbolic value and mobility:</strong> The wide distribution of both finished figurines and conical rhyta across western Anatolia (and stylistic influence or actual export into the Aegean islands) indicates that these were not ordinary domestic items. They circulated through exchange networks that linked inland workshops to coastal and island communities.</li>
+                <li><strong>Possible ritual or identity roles:</strong> The upward gaze, emphasis on the head, and standardized female form invite interpretations related to fertility, ancestral representation, celestial observation, or status display. Their frequent recovery as fragments may reflect intentional breakage in ritual contexts or simply the fragility of thin marble at the neck.</li>
+                <li><strong>Craft knowledge and social organization:</strong> Sustained specialized production implies transmission of skill across generations, possible patronage or community investment in specialists, and the existence of demand that justified the labor investment in marble working.</li>
+                <li><strong>Long-term cultural memory:</strong> Residual Kilia heads appearing in much later (Bronze Age, Classical, Medieval) contexts at sites such as Beçin suggest that these objects retained value or curiosity long after their original production period—perhaps as heirlooms, found objects, or antiquities.</li>
+                <li><strong>Modern human cost:</strong> High market prices for complete or near-complete examples have driven intensive looting at Kulaksızlar and related sites, destroying contextual information and fueling the illicit antiquities trade. The 2018–2019 excavations were partly motivated by the need to document what remained before further loss.</li>
+            </ul>
+            <p>In short, Kulaksızlar and the Kilia tradition illustrate how specialized craft, aesthetic standardization, and long-distance exchange of symbolic objects were already well developed in the mid-fifth millennium BC, centuries before the better-known Early Bronze Age Cycladic figurine traditions.</p>
+        </section>
+
+        <section id="ml">
+            <h2>5. Machine Learning &amp; Computational Relevance</h2>
+            <div class="ml-box">
+                <h3>Why this corpus is valuable for AI / ML research</h3>
+                <ul>
+                    <li><strong>Style classification &amp; attribution:</strong> Highly standardized yet subtly variable forms make an excellent testbed for supervised and unsupervised classification models (CNN, transformer-based vision models) that learn the canonical proportions of Kilia vs. other Chalcolithic or Early Bronze Age figurines. Provenanced workshop waste provides ground-truth labels for “in-process” vs. finished states.</li>
+                    <li><strong>Manufacturing sequence reconstruction:</strong> The rich assemblage of preforms, failures, and tools allows training of sequential models or graph neural networks that infer production stages from 2D photographs or 3D scans of fragments—useful for automated chaîne opératoire analysis.</li>
+                    <li><strong>3D reconstruction &amp; generative models:</strong> Broken necks and missing heads are common. Generative adversarial or diffusion models conditioned on complete examples and workshop preforms can propose plausible completions of fragments, assisting museum restoration and virtual reunification of dispersed pieces.</li>
+                    <li><strong>Provenance &amp; network analysis:</strong> Combining petrographic / isotopic data (if obtained) with findspot distribution enables machine-learning approaches to model exchange networks (e.g., gravity models, Bayesian networks, or graph embeddings of sites).</li>
+                    <li><strong>Looted vs. excavated discrimination:</strong> Surface-collected and auction-house examples vs. excavated workshop material offer a real-world dataset for training detectors of illicit-market material (surface wear, tool-mark statistics, residual soil chemistry proxies).</li>
+                    <li><strong>Digital twins &amp; public engagement:</strong> High-resolution photogrammetry of the workshop floors, tools, and figurines can feed interactive 3D environments or AR experiences; ML can auto-generate explanatory labels or guided tours.</li>
+                </ul>
+                <p style="margin-top:1rem;">The combination of a well-documented production center, standardized yet diagnostically variable products, and a history of both scientific excavation and market dispersal makes the Kulaksızlar–Kilia corpus unusually well suited for computational archaeology pipelines.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>6. Image Series for Web / Educational Use</h2>
+            <p>Below is a curated series of newly generated reconstructions and diagrams synthesized from the excavation photographs, museum pieces, and published figures. These are designed for educational web applications, virtual exhibitions, or teaching modules.</p>
+
+            <div class="gallery">
+                <figure>
+                    <img src="imagine_images/eKiv9.jpg" alt="Reconstructed Kulaksızlar workshop">
+                    <figcaption>1. Artistic reconstruction of a U-shaped workshop at Kulaksızlar with craftsmen, platforms, waste piles, and finished products (generated from excavation data).</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagine_images/YIi7z.jpg" alt="Manufacturing stages of Kilia figurine">
+                    <figcaption>2. Step-by-step manufacturing sequence of a Kilia-type figurine from rough preform to finished polished idol (archaeological drawing style).</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagine_images/tFcjs.jpg" alt="Complete Kilia Stargazer figurine reconstruction">
+                    <figcaption>3. High-fidelity reconstruction of a complete Kilia “Stargazer” figurine synthesizing proportions and details from provenanced and museum examples.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagine_images/9BKyQ.jpg" alt="Distribution and exchange network map">
+                    <figcaption>4. Educational map of Kulaksızlar workshop location and inferred Middle Chalcolithic exchange networks of Kilia idols and conical rhyta across western Anatolia and the Aegean.</figcaption>
+                </figure>
+            </div>
+
+            <p style="margin-top:1.5rem;"><em>Additional source imagery available in the original attachments includes:</em> workshop floor plans and waste concentrations (Takaoğlu 2022), preform drawings (Akdeniz 2010), near-complete bodies and heads from Manisa and Akhisar museums, conical rhyton waste and drill bits, museum displays of complete pieces (Getty, Sadberk Hanım, Istanbul Archaeological Museums, Menil, Cleveland), residual heads from Beçin, and surface finds from Dağdere.</p>
+        </section>
+
+        <section id="finds">
+            <h2>7. Selected Key Finds &amp; Contexts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Find / Context</th>
+                        <th>Significance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>İşlik A (U-shaped)</td>
+                        <td>Primary conical rhyton production; platforms with obsidian tools; sandstone drill bits</td>
+                    </tr>
+                    <tr>
+                        <td>İşlik C (oval)</td>
+                        <td>Dense Kilia figurine waste and unfinished pieces; every production stage represented</td>
+                    </tr>
+                    <tr>
+                        <td>İşlik D</td>
+                        <td>Near-finished broken figurines; closest approach to complete examples at the site</td>
+                    </tr>
+                    <tr>
+                        <td>Dağdere surface assemblage</td>
+                        <td>Finished Kilia fragments + rhyta ~30 km away → intra-regional exchange</td>
+                    </tr>
+                    <tr>
+                        <td>Beçin Castle residual head</td>
+                        <td>Kilia head in Medieval layers → long-term residual or curated object</td>
+                    </tr>
+                    <tr>
+                        <td>Museum complete pieces (Getty, Sadberk, etc.)</td>
+                        <td>High-quality finished products that left the workshop; many unprovenanced</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Concluding Remarks</h2>
+            <p>Kulaksızlar stands as a landmark site for understanding specialized craft production, inter-community exchange, and the creation of highly standardized symbolic objects in the Middle Chalcolithic of western Anatolia. The combination of workshop architecture, tool assemblages, manufacturing debris, and the wide distribution of finished products provides a rare window into both the technical and social dimensions of early specialized craft. Humanistically, the upward-gazing “Stargazer” figurines continue to invite reflection on how prehistoric communities represented the human form, the divine, or the celestial. Computationally, the corpus offers rich opportunities for machine-learning approaches to classification, reconstruction, network modeling, and cultural-heritage protection.</p>
+            <p style="margin-top:1.2rem;">Further archaeometric sourcing of marble, expanded excavation of the remaining workshop clusters, and systematic comparison of all known museum and excavated specimens will refine our understanding of this remarkable production and exchange system.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Report synthesized by Grok from primary archaeological publications and museum documentation (2026).</p>
+        <p>Images: generated reconstructions based on published excavation photographs, drawings, and museum specimens of Kilia-type idols and Kulaksızlar workshop materials.</p>
+        <p>For educational and research use. Original scholarly sources retain copyright of published figures and data.</p>
+    </footer>
+</body>
+</html>
