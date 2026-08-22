@@ -4,12 +4,12 @@ Studio log for Stargazer. Newest first.
 
 ## 2026-08-22
 
-- Exported the Grok-built vitrine into GitHub as `stargazer` (was `pine-brook-wave-brave`).
-- README now frames it as a web app on public data: CMA 1993.165 mesh/photos (CC0) and published Kulaksızlar archaeology.
-- GitHub description: One-object museum for the Cleveland Stargazer (1993.165).
-- Repo visibility is still a separate shop-window choice from the public-data rights.
+- GitHub repo is public: https://github.com/PatternWeave/stargazer
+- README frames it as a web app on public data: CMA 1993.165 mesh/photos (CC0) and published Kulaksızlar archaeology.
+- Exported the Grok-built vitrine into GitHub (was `pine-brook-wave-brave`).
+- Description: One-object museum for the Cleveland Stargazer (1993.165).
 
 ## Next
 
 - Keep this log current as the vitrine changes.
-- Flip the GitHub repo public when the page is ready for a stranger to land on.
+- Second Grok-export repo `lagoon-palm-crystal-hazel` is still empty; shop-window that one when the files land.
