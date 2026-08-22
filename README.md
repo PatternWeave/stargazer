@@ -1,10 +1,10 @@
 # Stargazer
 
-A one-object museum for the Cleveland Museum of Art’s marble *Stargazer* (1993.165).
+A one-object web museum for the Cleveland Museum of Art’s marble *Stargazer* (1993.165).
 
-Turn the photogrammetry mesh in the vitrine, download the object file, and read the workshop essay on Kulaksızlar — the western Anatolian site where this Kilia-type figure was made.
+The app uses public data: Cleveland’s Open Access photogrammetry mesh and photographs (CC0), plus published excavation accounts of the Kulaksızlar workshop in western Anatolia.
 
-**Status:** private studio build. Not a public release yet.
+Turn the mesh in the vitrine, download the object file, and read the workshop essay — site, making, type, proportion, meaning, and find spots.
 
 ## The object
 
